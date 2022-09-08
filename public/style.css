@@ -1,0 +1,103 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	/* cursor: url('assets/target-grey.png') 32 32, auto; */
+	overflow: hidden;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.overlay-box {
+	border: 1px solid #ccc;
+	width: 400px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.main-button {
+	width: 100%;
+	background: rgb(65, 65, 255);
+	border: 2px solid rgb(45, 45, 255);
+	color: white;
+	font-variant: small-caps;
+	padding: 5px;
+	outline: none !important;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+#minimapCanvas {
+	display: none;
+}
+
+#userdata {
+	font-family: Arial;
+	font-size: 0.8em;
+	margin: 0;
+	padding-top: 15px;
+}
+
+.user-role {
+	margin: 0 2px;
+}
+
+.overlay-box h1 {
+	margin: 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 15px;
+}
+
+.overlay-box input {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.progress-bar {
+	border-radius: 3px;
+	height: 25px;
+	background: #ddd;
+	display: relative;
+	text-align: center;
+}
+
+.progress-bar-value {
+	display: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #ffcc00;
+	border-radius: 3px;
+	width: 0;
+}
+
+.progress-bar-text {
+	margin-top: -22px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mb {
+	margin-bottom: 20px;
+}
+
+.upgrade {
+	width: 20px;
+}

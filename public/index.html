@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Futurefighter</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="overlay">
+			<div class="overlay-box mb">
+				<h1>Futurefighter</h1>
+				<input type="text" placeholder="Username" id="username">
+				<button onclick="onSubmit()" class="main-button">join game</button>
+				<p id="userdata"></p>
+			</div>
+			<div class="overlay-box" id="upgrades">
+				<h1>Upgrades</h1>
+				<div class="progress-bar">
+					<div class="progress-bar-value" id="experience-bar-value"></div>
+					<span class="progress-bar-text" id="experience-bar-text"></span>
+				</div>
+				<div id="upgrade-box"></div>
+			</div>
+		</div>
+		<canvas id="gameCanvas"></canvas>
+		<canvas id="minimapCanvas"></canvas>
+		<script src="public.js"></script>
+	</body>
+</html>
